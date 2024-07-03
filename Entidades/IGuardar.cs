@@ -8,6 +8,6 @@ namespace Entidades
 {
     public interface IGuardar <T>
     {
-        void Guardar(T item, string ruta);
+        public void Guardar(T item, string ruta);
     }
 }

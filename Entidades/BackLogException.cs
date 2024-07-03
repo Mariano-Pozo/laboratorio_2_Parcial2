@@ -8,19 +8,7 @@ namespace Entidades
 {
     public class BackLogException : Exception
     {
-        public BackLogException() { }
-
-        
-
-    }
-    public class BomberoOcupadoException : Exception
-    {
-        public BomberoOcupadoException() : base()
-        {
-        }
-        public BomberoOcupadoException(string message) : base(message) { }
-        public BomberoOcupadoException(string message, Exception innerException) : base(message, innerException)
-        {
-        }
+        public BackLogException(string message):base(message) { }
+        public BackLogException(string message, Exception innerException):base(message, innerException) { }
     }
 }
